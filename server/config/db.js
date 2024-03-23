@@ -3,7 +3,8 @@ const config = require('../config');
 
 const connectDB = async () => {
   try {
-    const db = await mongoose.connect(config.MONGO_URI, {
+    //const db = await mongoose.connect(config.MONGO_URI, {
+    const db = await mongoose.connect("mongodb+srv://admin:admin1121@vin-pok.37ajf69.mongodb.net/?retryWrites=true&w=majority&appName=vin-pok", {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,
